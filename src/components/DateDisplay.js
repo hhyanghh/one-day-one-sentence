@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 
+import classes from "./DateDisplay.module.css";
+
 const DateDisplay = () => {
   const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
-    // 페이지 로딩 시 현재 날짜 설정
     updateDate();
   }, []);
 
@@ -21,8 +22,8 @@ const DateDisplay = () => {
   };
 
   return (
-    <div style={{ textAlign: "right", margin: "10px" }}>
-      <p>{currentDate}</p>
+    <div>
+      <h3 className={classes.date}>{currentDate}</h3>
     </div>
   );
 };

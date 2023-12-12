@@ -1,0 +1,29 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NanumSquareNeo-Variable";
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #332c39;
+}
+
+/* Add a media query for mobile devices */
+/* @media only screen and (max-width: 600px) {
+  .App {
+    background-image: url("./assets/img/bg_02.JPG");
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+} */
